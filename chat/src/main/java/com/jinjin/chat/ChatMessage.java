@@ -9,7 +9,6 @@ import java.time.LocalDateTime;
 @Document(collection = "chat")
 @Getter
 @Setter
-@ToString
 public class ChatMessage {
     @Id
     private String chatId;
