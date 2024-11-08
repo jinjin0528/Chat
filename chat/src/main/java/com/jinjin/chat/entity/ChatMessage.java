@@ -1,4 +1,4 @@
-package com.jinjin.chat;
+package com.jinjin.chat.entity;
 
 import jakarta.persistence.Id;
 import lombok.*;
@@ -9,6 +9,8 @@ import java.time.LocalDateTime;
 @Document(collection = "chat")
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class ChatMessage {
     @Id
     private String chatId;

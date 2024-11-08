@@ -1,5 +1,6 @@
 package com.jinjin.chat;
 
+import com.jinjin.chat.entity.ChatMessage;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

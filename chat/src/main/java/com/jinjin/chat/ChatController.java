@@ -1,18 +1,17 @@
 package com.jinjin.chat;
 
+import com.jinjin.chat.entity.ChatMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.SendTo;
-import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
 
-@RestController
+@Controller
 @RequiredArgsConstructor
 @RequestMapping("/api/chat")
 public class ChatController {
@@ -20,6 +19,7 @@ public class ChatController {
     private final ChatService chatService;
     private final SimpMessagingTemplate simpMessagingTemplate;
 
+//    @CrossOrigin
 //    @MessageMapping("/message/{chatRoomId}")
 //    public ChatMessage sendMessage(ChatMessage message){
 //        return message;
