@@ -14,10 +14,10 @@ import java.time.LocalDateTime;
 public class ChatMessage {
     @Id
     private String chatId;
+    private String chatRoomId;
     private String content;
     private String sender;
     private LocalDateTime sentAt;
-    private String chatRoomId;
 
 
 }
