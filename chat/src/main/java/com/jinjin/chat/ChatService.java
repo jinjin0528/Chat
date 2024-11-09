@@ -41,6 +41,12 @@ public class ChatService {
     public void handleUserDisconnect(String sessionId) {
         String username = userStatus.remove(sessionId);
         if(username != null) {
+            User user = userRepository.findByUserName ( username );
+            if (user != null) {
+                user.setStatus ( UserStatus.offline );
+                user.setLastActiveTime ( System.currentTimeMillis () );
+                userRepository.save ( user );
+            }
             log.info("사용자 연결 해제 : {} (Session Id: {})", username, sessionId);
         }
     }

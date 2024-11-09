@@ -30,7 +30,7 @@ public class ChatController {
         try {
             LocalDateTime sendAt = chatService.saveChat(message.getSender(), message.getContent());
             message.setSentAt(sendAt);
-            simpMessagingTemplate.convertAndSendToUser("/sub/" + chatRoomId, message);
+            simpMessagingTemplate.convertAndSendToUser("/topic/" + chatRoomId, message);
         } catch (Exception e) {
             e.printStackTrace();
         }
