@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:color="http://www.w3.org/1999/xhtml" xmlns:font-size="http://www.w3.org/1999/xhtml"
+      xmlns:margin="http://www.w3.org/1999/xhtml" xmlns:font-family="http://www.w3.org/1999/xhtml"
+      xmlns:background-color="http://www.w3.org/1999/xhtml" xmlns:display="http://www.w3.org/1999/xhtml"
+      xmlns:justify-content="http://www.w3.org/1999/xhtml" xmlns:align-items="http://www.w3.org/1999/xhtml"
+      xmlns:height="http://www.w3.org/1999/xhtml" xmlns:width="http://www.w3.org/1999/xhtml"
+      xmlns:background="http://www.w3.org/1999/xhtml" xmlns:padding="http://www.w3.org/1999/xhtml"
+      xmlns:border-radius="http://www.w3.org/1999/xhtml" xmlns:box-shadow="http://www.w3.org/1999/xhtml"
+      xmlns:margin-bottom="http://www.w3.org/1999/xhtml" xmlns:text-align="http://www.w3.org/1999/xhtml"
+      xmlns:margin-right="http://www.w3.org/1999/xhtml" xmlns:border="http://www.w3.org/1999/xhtml"
+      xmlns:cursor="http://www.w3.org/1999/xhtml" xmlns:button="http://www.w3.org/1999/xhtml"
+      xmlns:list-style-type="http://www.w3.org/1999/xhtml" xmlns:margin-top="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <style
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            }
+
+            .container {
+            width: 400px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+            }
+
+            input[type="text"] {
+            width: calc(100% - 100px);
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            }
+
+            button {
+            padding: 10px 15px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            }
+
+            button:hover {
+            background-color: #3700b3;
+            }
+
+            ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            }
+
+            li {
+            background: #f0f0f0;
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            }
+
+            li h2 {
+            font-size: 18px;
+            margin: 0;
+            }
+
+            li p {
+            font-size: 14px;
+            color: #666;
+            }
+></style>
+</head>
+<body>
+<div class="container">
+    <h1>Chat Rooms</h1>
+    <input type="text" id="searchInput" placeholder="Search by keyword..." />
+    <button id="searchButton">Search</button>
+
+    <ul id="chatRoomList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

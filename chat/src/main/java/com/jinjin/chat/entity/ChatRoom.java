@@ -1,9 +1,10 @@
 package com.jinjin.chat.entity;
 
-import jakarta.persistence.Id;
 import lombok.*;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Document(collection = "chatroom")
@@ -17,5 +18,6 @@ public class ChatRoom {
     private String chatRoomId;
     private String creatorId;
     private List<String> membersIds;
-    private long createdAt;
+    private LocalDateTime createdAt;
+    private String keyword;
 }

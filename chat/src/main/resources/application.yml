@@ -5,3 +5,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/chatdb
+
+logging:
+  level:
+    root: debug
