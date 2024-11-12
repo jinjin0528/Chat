@@ -5,7 +5,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
-import java.util.List;
+imp편의점 아침ort java.util.List;
 
 @Document(collection = "chatroom")
 @Getter

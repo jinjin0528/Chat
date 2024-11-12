@@ -15,8 +15,9 @@ public class ChatMessage {
     private String chatId;
     private String chatRoomId;
     private String content;
-    private String sender;
-    private String receiver;
+    private String senderId;
+    private String receiverId;
+    private String fileUrl;
     private LocalDateTime sentAt;
     private String keyword;
 }
